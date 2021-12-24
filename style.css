@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+/* font-family: 'Comfortaa', cursive; */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(189deg, #000000eb, #1ed760);
+}
+#navbar {
+  background-color: black;
+  height: 45px;
+  position: sticky;
+  color: white;
+  font-family: "Comfortaa", cursive;
+}
+ul {
+  display: flex;
+  align-items: center;
+  height: 43px;
+  list-style: none;
+}
+ul li {
+  padding: 0 10px;
+}
+
+.brand img {
+  width: 36px;
+  margin: 0 6px;
+  margin-top: -1px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+}
+.container::after {
+  z-index: 1;
+  display: flex;
+}
+.songList {
+  width: max-content;
+}
+.container {
+  background: url(pexels-daniel-reche-3721941.jpg);
+  font-family: "Comfortaa", cursive;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  height: 80vh;
+  background-position: center;
+  background-size: cover;
+  width: 80vw;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.icons {
+  display: block;
+  margin: 0 auto;
+  margin-top: 1%;
+}
+.icons i {
+  margin: 0 1rem;
+  cursor: pointer;
+}
+.songCover img {
+  width: 45px;
+}
+.banner {
+  position: relative;
+  margin-top: 35px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+.songDetail {
+  display: flex;
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 40vw;
+  background: linear-gradient(335deg, #1ed760, black);
+  align-items: center;
+  justify-content: space-between;
+}
+.songList h3 {
+  background-color: black;
+  display: flex;
+  color: white;
+  margin: 10px 29px;
+  height: 50px;
+  width: 50%;
+  align-items: center;
+}
+.songTitle {
+  padding: 0 20px;
+}
+.songDetail .songDuration {
+  padding: 0 15px;
+}
+.songDetail .songPlay {
+  cursor: pointer;
+  width: 40px;
+}
+.bottom {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  padding: 0 5%;
+  color: white;
+  width: 100%;
+  position: sticky;
+  bottom: 0;
+  height: 11vh;
+}
+#masterGif{
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
+.masterSongName {
+  padding-top: 10px;
+}
+#seekBar {
+  cursor: pointer;
+}
+.icons {
+  margin-top: -16px;
+}
+
+
+@media screen and (max-width:1400px){
+    .container{
+        background: url("player-gif.gif");
+    }
+    .banner{
+        display: none;
+    }
+    .songList{
+        width: 80vw;
+    }
+    .songDetail{
+        width: 75vw;
+        margin: 10px auto;
+    }
+    
+}
+@media only screen and (max-width:700px) {
+    .container{
+        width: 100vw;
+    }
+    .songList{
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+    .songDetail{
+        width: 90vw;
+    }.bottom{
+        height: 15vh;
+    }
+    .masterSongName{
+        text-align: center;
+    }
+    .icons{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
